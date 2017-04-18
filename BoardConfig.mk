@@ -232,4 +232,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WLAN_MAC_SYMLINK := true
 
 # Inherit the proprietary files
--include vendor/xiaomi/lavender/BoardConfigVendor.mk
+include vendor/xiaomi/lavender/BoardConfigVendor.mk
