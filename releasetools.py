@@ -36,9 +36,9 @@ def AddImage(info, input_zip, basename, dest):
 
   data = input_zip.read(path)
   common.ZipWriteStr(info.output_zip, basename, data)
+  info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def OTA_InstallEnd(info, input_zip):
-  info.script.Print("Patching device-tree and verity images...")
   AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
