@@ -64,7 +64,6 @@ $(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Display
-TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_GRALLOC4 := true
 TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 420
