@@ -185,6 +185,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
