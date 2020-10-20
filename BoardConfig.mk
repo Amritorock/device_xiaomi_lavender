@@ -120,9 +120,6 @@ BOARD_RAMDISK_USE_LZ4 := true
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := false
 
-# Keymaster
-TARGET_PROVIDES_KEYMASTER := true
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
