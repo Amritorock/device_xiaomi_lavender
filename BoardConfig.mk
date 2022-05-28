@@ -56,7 +56,6 @@ TARGET_ENFORCES_QSSI := true
 
 # Camera
 TARGET_TS_MAKEUP := true
-TARGET_USES_QTI_CAMERA_DEVICE := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 $(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
