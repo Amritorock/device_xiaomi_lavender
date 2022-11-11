@@ -80,7 +80,8 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.sdm660
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
