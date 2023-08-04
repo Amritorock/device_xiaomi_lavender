@@ -84,9 +84,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/framework_manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix.xml
 
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE :=  \
     androidboot.hardware=qcom \
