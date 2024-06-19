@@ -520,6 +520,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat \
     extphonelib \
     extphonelib-product \
     extphonelib.xml \
