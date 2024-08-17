@@ -24,8 +24,6 @@ PRODUCT_PACKAGES += \
     audio.usbv2.default \
     liba2dpoffload \
     libaudio-resampler \
-    libaudioclient_shim \
-    libaudioroute.vendor \
     libhdmiedid \
     libhfp \
     libsndmonitor \
@@ -54,17 +52,12 @@ PRODUCT_PACKAGES += \
 
 # Biometrics
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660 \
-    android.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    android.hardware.bluetooth@1.0 \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio-impl \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    android.hardware.bluetooth.audio-impl
 
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
@@ -73,40 +66,14 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    Aperture \
-    android.hardware.camera.device@3.5 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.6 \
-    camera.sdm660 \
-    libcamera_metadata.vendor \
-    libexif.vendor \
-    libion.vendor \
-    libjpeg.vendor \
-    liblz4.vendor \
-    libMegviiFacepp-0.5.2 \
-    libutilscallstack.vendor \
-    libyuv.vendor \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    camera.sdm660
 
 # Control groups and task profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
-# Capability configstore
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0 \
-    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
-
-# Codec2 modules
-PRODUCT_PACKAGES += \
-    com.android.media.swcodec \
-    libsfplugin_ccodec \
-    android.hardware.media.c2@1.2.vendor \
-    libcodec2_vndk.vendor \
-    libcodec2_hidl@1.2.vendor
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
@@ -136,24 +103,13 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0 \
-    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
     gralloc.sdm660 \
-    hwcomposer.sdm660 \
-    libdisplayconfig \
-    libdrmutils \
-    libgralloc.qti \
-    libwfdservice_shim \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor
+    hwcomposer.sdm660
 
 # DeviceDoze
 PRODUCT_PACKAGES += \
@@ -165,17 +121,7 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.4.vendor
-
-# Encryption
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.keymaster@4.1.vendor
-
-# Fingerprints
-PRODUCT_PACKAGES += \
-    com.fingerprints.extension@2.0.vendor
+    android.hardware.drm-service.clearkey
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -194,11 +140,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
     libbatching \
-    libcurl.vendor \
     libgeofencing \
     libgnss \
     libwifi-hal-ctrl
@@ -223,18 +165,6 @@ PRODUCT_PACKAGES += \
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti
-
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
-    libhidlmemory.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor \
-    libhidlbase-v32 \
-    libhidlbase-v32.vendor
 
 # IDC
 PRODUCT_COPY_FILES += \
@@ -291,10 +221,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
 # Media
-PRODUCT_PACKAGES += \
-    libgui_vendor
-
-# Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
@@ -307,25 +233,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles_sdm660_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_sdm660_v1.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
-# Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mtdservice@1.2.vendor
-
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
-
 # OMX
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
-    libstagefright_softomx_plugin.vendor \
     libstagefrighthw
 
 # Overlays
@@ -400,7 +313,6 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3.vendor \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
@@ -414,13 +326,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 28
-
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Privapp-Permissions
 PRODUCT_COPY_FILES += \
@@ -438,27 +343,9 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 $(call inherit-product, external/json-c/Android.configure.mk)
-PRODUCT_PACKAGES += \
-    libcrypto_utils.vendor \
-    libjson \
-    libjsoncpp.vendor \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    libnetutils.vendor \
-    libsqlite.vendor \
-    libssl.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -497,12 +384,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl-xiaomi \
-    android.hardware.sensors@1.0-service \
-    libpower.vendor \
-    libsensorndkbridge
+    android.hardware.sensors@1.0-service
 
 # Sensor Config
 PRODUCT_COPY_FILES += \
@@ -564,18 +447,12 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
-# VNDK
-PRODUCT_PACKAGES += \
-    libstdc++_vendor
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    android.hardware.wifi.hostapd@1.3.vendor \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom \
-    libwifi-system-iface.vendor \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
