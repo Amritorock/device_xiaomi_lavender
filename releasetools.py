@@ -19,11 +19,12 @@ import common
 import re
 
 def FullOTA_InstallBegin(info):
-  input_zip = info.input_zip
-  AddImage(info, "RADIO", "super_dummy.img", "/tmp/super_dummy.img");
-  info.script.AppendExtra('package_extract_file("install/bin/flash_super_dummy.sh", "/tmp/flash_super_dummy.sh");')
-  info.script.AppendExtra('set_metadata("/tmp/flash_super_dummy.sh", "uid", 0, "gid", 0, "mode", 0755);')
-  info.script.AppendExtra('run_program("/tmp/flash_super_dummy.sh");')
+  info.script.AppendExtra('ifelse(is_mounted("/system_root"),unmount("/system_root"));')
+  info.script.AppendExtra('ifelse(is_mounted("/vendor"),unmount("/vendor"));')
+  info.script.AppendExtra('run_program("/system/bin/toybox", "blkdiscard", "/dev/block/bootdevice/by-name/system"); || abort("ERROR: Failed to discard data on system partition.");')
+  info.script.AppendExtra('run_program("/system/bin/toybox", "blkdiscard", "/dev/block/bootdevice/by-name/vendor"); || abort("ERROR: Failed to discard data on vendor partition.");')
+  info.script.AppendExtra('ui_print("- Flashing super_empty onto system partition...");')
+  AddImage(info, "RADIO", "super_dummy.img", "/dev/block/bootdevice/by-name/system");
   return
 
 def FullOTA_InstallEnd(info):
