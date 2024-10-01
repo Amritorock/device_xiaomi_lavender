@@ -223,9 +223,6 @@ TARGET_USES_USB_GADGET_HAL := true
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
-# VNDK
-BOARD_VNDK_VERSION := current
-
 # Vulkan
 TARGET_USES_VULKAN := false
 
