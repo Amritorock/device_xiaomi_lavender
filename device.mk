@@ -308,10 +308,6 @@ PRODUCT_PACKAGES += \
     PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sdm660_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Preopt SystemUI
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings
-
 # PRODUCT_SHIPPING_API_LEVEL indicates the first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 28
 
