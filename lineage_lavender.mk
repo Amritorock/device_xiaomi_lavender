@@ -24,5 +24,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Build Description
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys" \
-        BUILD_FINGERPRINT := xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGMIXM/release-keys
+        BuildDesc="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys" \
+        BuildFingerprint=xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGMIXM/release-keys
