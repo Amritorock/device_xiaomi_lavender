@@ -361,7 +361,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so|
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.spi.sdm660.so|d1f275a91557dfab52e82906986c5094fe078722
 
 # DPM - from LA.QSSI.15.0.r1-10500-qssi.0
-framework/tcmclient.jar|de34d4305038f6fcf3cb314fd352ac54cec7e928
+system/framework/tcmclient.jar|de34d4305038f6fcf3cb314fd352ac54cec7e928
 system_ext/bin/dpmd|421aed5a42b75096a1d050bfa96a57405f250721
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -617,8 +617,8 @@ vendor/lib64/vendor.display.color@1.2.so|ada5c4d7907fe649dda8507c8c6fe63c50ae1e1
 vendor/lib64/vendor.display.postproc@1.0.so|408b4edd234e9da45ab55d64950af8b58ca5e6bf
 
 # Graphics (SDM) - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
-lib/libsdm-disp-apis.so|369c71b84355d1775cec271b19283721dbfbac63
-lib64/libsdm-disp-apis.so|2de535884bb057c6c1bc3fae8a59e79516d908df
+system/lib/libsdm-disp-apis.so|369c71b84355d1775cec271b19283721dbfbac63
+system/lib64/libsdm-disp-apis.so|2de535884bb057c6c1bc3fae8a59e79516d908df
 vendor/lib/libqseed3.so|87b37fefb7609474f9d1730c6c6a23c681046fe3
 vendor/lib/libsdm-color.so|408b3a458834a30ed316f50d8bb662b29f16f73e
 vendor/lib/libsdm-diag.so|a83a801ba72e7f94533ba8340f8ebe51f6d4b941
