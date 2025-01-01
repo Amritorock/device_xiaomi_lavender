@@ -64,8 +64,6 @@ $(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Display
-TARGET_USES_GRALLOC4 := true
-TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 420
 
 # DT2W
@@ -120,6 +118,9 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := false
+
+# Media
+TARGET_USES_ION := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
