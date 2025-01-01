@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.display.allocator-service \
     gralloc.sdm660 \
-    hwcomposer.sdm660
+    hwcomposer.qcom
 
 # DeviceDoze
 PRODUCT_PACKAGES += \
