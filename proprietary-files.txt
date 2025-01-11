@@ -778,7 +778,7 @@ vendor/lib/vendor.qti.hardware.qseecom@1.0.so|0dca64ec55d8ad4611c102b207a5d621ee
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|5dac5a44ec69223c4efc7716280d58a3cba45298
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|b41cc6ade0e907297bc7f4b70cc6b95276a584c8
 
-# Radio - from LA.QSSI.15.0.r1-10500-qssi.0
+# Radio - from LA.QSSI.15.0.r1-12900-qssi.0
 system_ext/app/DeviceInfo/DeviceInfo.apk|1efd59166cb17e74ec5e642b09871027a3fcba7b
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|d5829c38c2370cb9acd8b3753d62cef709815614
 system_ext/app/uceShimService/uceShimService.apk|8ebd2b6361a6bdae9dcc58d049aaad73a6482743
@@ -788,7 +788,7 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|e4d1
 system_ext/etc/cdma_call_conf.xml|d1ae6bf84ec5b68ea6659d6b0558835af69aa8c0
 system_ext/etc/spn-conf.xml|ac8a0750445f66091e7e77928fc055ff50369f42
 system_ext/framework/qcrilhook.jar|9787a32278ef29754c0b0fe665c6dae883c8e9c2
-system_ext/framework/qti-telephony-common.jar|761333c1e93063c493c46658fabc74275a978ab5
+system_ext/framework/qti-telephony-common.jar|09f549449468253084e7068a6fd3829f62db5b44
 system_ext/lib64/libembmsmmosal.so|0799fe56d62d958dd49edaa0bfb8a5ceadfc6b83
 system_ext/lib64/libembmsmmparser_lite.so|6c393178e2b8e807058e87b43d0cc8edd6598fa4
 system_ext/lib64/libembmstinyxml.so|e65bced499f14ece8aac51254c9b354828642784
