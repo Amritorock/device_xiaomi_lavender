@@ -97,9 +97,6 @@
 # Thermal
 /data/vendor/thermal(/.*)?                                                                                                         u:object_r:thermal_data_file:s0
 
-# Tranfs
-/dev/block/sdc62                                                                        u:object_r:tranfs_block_device:s0
-
 # Video4linux sysfs nodes
 /sys/devices/platform/soc/caa0000\.qcom,jpeg/video4linux/video1(/.*)?                                                              u:object_r:sysfs_graphics:s0
 
