@@ -637,9 +637,9 @@ vendor/lib64/libsdm-diag.so|1b27bcbdba062afc1d414b30c1efcd08ac4140cf
 vendor/lib64/libsdmextension.so|9a4342e9417fd7cee2eb4d34c55762c4de6811ae
 vendor/lib64/libtinyxml2_1.so|5bdb5c7785f90ad4ebaa7085a4f83d86567331f9
 
-# Graphics (Vulkan) - from Zebra/helios/helios:13/13-34-31.00-TG-U00-STD-HEL-04/181:user/release-keys
-vendor/lib/hw/vulkan.adreno.so|c9243672f1543fddb5313803a841b527055cd4a5
-vendor/lib64/hw/vulkan.adreno.so|6eb971883930dec2bafd209f1c503ac81d77e836
+# Graphics (Vulkan) - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/hw/vulkan.adreno.so|1f6c263e550e5f467f1628dae5d00130f8501a8a
+vendor/lib64/hw/vulkan.adreno.so|2c371b131a2672c96d7ecf02bcbda954f9662879
 
 # IRQ balance - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
 vendor/bin/msm_irqbalance|9e39bffcabe1dfd1d1a4d004171c7b01179f3ca8
