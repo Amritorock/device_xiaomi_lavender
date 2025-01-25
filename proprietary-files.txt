@@ -61,29 +61,29 @@ system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so|3c28891cd28f9c0054066190
 system_ext/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so|dd9c3c79013092c0f2e276e828e230789d0d173e
 system_ext/lib64/vendor.qti.voiceprint@1.0.so|ea86536d42e8a63df5698278a373bb5cf051f547
 
-# Audio - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/bin/audioflacapp|7c1af58ff412fe328005d0dc8e1a06b0fbde19e4
-vendor/lib/libacdb-fts.so|85db0429ba7dc827246d5cd5f09f1d2431efa5ef
-vendor/lib/libacdbloader.so|fba13071988a7d9621427a39ddafdf37d253fab4
-vendor/lib/libacdbrtac.so|5352f64da0d477814c80145a1c38c180b48320b2
-vendor/lib/libadiertac.so|de8867427f0e6cf9465642c59974d27846374cc8
-vendor/lib/libadm.so|436dac72f82be5159d768c38c2f9257ce3d1c2e8
-vendor/lib/libaudcal.so|24a0e64b36a707da08fc7d9bc160ab8b0adc8851
-vendor/lib/libaudioalsa.so|8233b05a3353c2cad7eba5bd7fb2abe2f9cfdf5d
-vendor/lib/libaudioconfigstore.so|29d0ff5c743192ab704fe6fbf9e6d34c1c956c0d
--vendor/lib/libaudioparsers.so|320ed41cd6e481f00090d579ca55809c6fd10037
-vendor/lib/libdrc.so|5e3c7f13ab8d0fdffd966a36265bc915f8ba6b5a
-vendor/lib/libqtigef.so|62e7509d5871579c9698a33d43d2367f69393cee
-vendor/lib/libsurround_3mic_proc.so|2847240eb3f04393d0b7664df80fcafcfa433e06
-vendor/lib64/libacdb-fts.so|b9553b1a5a64dcff12116b03603c3943daf7f1c0
-vendor/lib64/libacdbloader.so|14aeff3b3e552f8191e928d7391819bb97cc55f3
-vendor/lib64/libacdbrtac.so|d169dcdf7f554083196307c44adb901d61878ade
-vendor/lib64/libadiertac.so|efa76bec9f7ea2e88bbe161770d53931261bb294
-vendor/lib64/libaudcal.so|7ac4d95dd1616f5fb323697f061cd829d05eb1f8
-vendor/lib64/libaudioalsa.so|4f46e5201daa7043a62606a8591bb57c1b8edf54
-vendor/lib64/libaudioconfigstore.so|f0b4cbfda2c90255c2a226a5ad1cfc6a985cd2ad
--vendor/lib64/libaudioparsers.so|2c8910dda77caf8ffdd8bf233e4d16f1c2b37a5e
-vendor/lib64/libqtigef.so|b0c85df22d10e1f8adefe4cee8fddd7672acabd1
+# Audio - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/audioflacapp|ac0fd76083430736851da040b5547677ac7f4067
+vendor/lib/libacdb-fts.so|10a9d929616df9ec0e545563a2ca08c9bd814d5f
+vendor/lib/libacdbloader.so|080d3f49a528ad242fe46f07ea75f413489b4f83
+vendor/lib/libacdbrtac.so|522ba52f74e3a06e128f842fca6e8781613263e9
+vendor/lib/libadiertac.so|41a56e166dab59a4d4bbd7bf1e4e25711c352b02
+vendor/lib/libadm.so|05a0611a064dafc0a9e47337cca5a780cea6de8a
+vendor/lib/libaudcal.so|8e5e3bf2f39b4abaedd643c261972b7f68a545dc
+vendor/lib/libaudioalsa.so|edcf75fa53bd959defd18a6a16e0ec40fd42b014
+vendor/lib/libaudioconfigstore.so|02012b87f4d5907e0b640fa1c5b2e4312e725eee
+-vendor/lib/libaudioparsers.so|9f22defa83a7aea16d45e609579361e523f8b773
+vendor/lib/libdrc.so|1bfd492c38cfdea25beba3ed992d883b972fb9fb
+vendor/lib/libqtigef.so|c803dd2eea97a720f5ae20c5d37bc0f37a96c7a5
+vendor/lib/libsurround_3mic_proc.so|e1464999b2a48e1489dba10969106ad08fac6479
+vendor/lib64/libacdb-fts.so|b41c2a37bc046e9c7e6764a2271882ed1415c491
+vendor/lib64/libacdbloader.so|018b00d129249592838eb04423027f329c801686
+vendor/lib64/libacdbrtac.so|18d78503128af30813446852cefda17c44262c56
+vendor/lib64/libadiertac.so|1fb475ed2bdd4f828ab7e64c9dc05327ff262939
+vendor/lib64/libaudcal.so|5a2fec1304afe9eacb87fbca87a8121fda45ffb7
+vendor/lib64/libaudioalsa.so|5385e8c57f69fe27e7b640aee08b5b2b00d70b86
+vendor/lib64/libaudioconfigstore.so|7a3a9fbe350039a4b803395bc39ca635cf651a01
+-vendor/lib64/libaudioparsers.so|506b43e9d5c18e5eeaa18cc734324f0138d7e9cc
+vendor/lib64/libqtigef.so|de0024eed15f7ba45968e435971730230a643dc3
 
 # Audio FX modules - from LA.QSSI.14.0.r1-10000.01-qssi.0
 system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
