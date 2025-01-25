@@ -124,12 +124,12 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so|80096a66b18cec640d462cb17bce3adee8a
 # ANT+ - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|d81c62439958c309c34bc96bf63232fa3a6481b5
 
-# Bluetooth - from Zebra/helios/helios:13/13-26-09.00-TG-U00-STD-HEL-04/103:user/release-keys
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|ffc18a75179361b39a6ba0ed50db62e3d0cc14ed
+# Bluetooth - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|5fb0c2184b062039281282baf6543f6bea56a9a8
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|0c9c0d1749d2605649056057c2c557f7cb8c387d
-vendor/lib64/libbtnv.so|181c2bc5605e74549b9117c6af27ab43775ddf32
-vendor/lib64/libsoc_helper.so|f3409f83686e376f9eb02b0ab1be1e45d7d3140b
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|b179e3b745a2666eeac3e37661963e0578adb7d8
+vendor/lib64/libbtnv.so|d412e0511c79599cdb010a18f97111e0283759e8
+vendor/lib64/libsoc_helper.so|4f00ed77a590817651ea3eb9c93d987ef15bf9e7
 
 # Bluetooth (A2DP) - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
 vendor/lib/hw/audio.bluetooth_qti.default.so|42a6686f1b62678ae906fc7a7484104023e639ee
