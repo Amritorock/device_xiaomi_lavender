@@ -722,10 +722,10 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781
 vendor/lib64/libmlipay.so|c3589fa6bae9a78c622a768e65eac07ac8da6d9c
 vendor/lib64/libmlipay@1.1.so|d56a1f39930bc44891a22fc5490efe6aa0eb4a2c
 
-# Peripheral - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/bin/pm-proxy|96c50d1dae229c9438db043b9a912af87e2a7e16
-vendor/bin/pm-service|d6503051e0ae7a1bb418e6050867c5e01624487f
-vendor/lib64/libperipheral_client.so|95f7a7d72825708d307e3d2322523dc3aed67363
+# Peripheral - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/pm-proxy|41df355eb75dfb69b07083a37c3745dd6d084b36
+vendor/bin/pm-service|bf5ca6e5dfd398549bdd563c6e3edea12f4c027a
+vendor/lib64/libperipheral_client.so|31fab3060caeef08bcafb83f01a452bc29029723
 
 # QMI - from LA.QSSI.14.0.r1-12000-qssi.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
