@@ -686,35 +686,35 @@ system_ext/lib/libavenhancements.so|f498a457feead8942ba2b97240af169bd95d7c6c
 system_ext/lib64/extractors/libmmparserextractor.so|463d20da8529ec1564a79a38ea169cc7dcbc81b0
 system_ext/lib64/libavenhancements.so|924381c9ecd97eb69f7e8246656e357fb2df46c4
 
-# Media - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/lib/libdsd2pcm.so|39dd732d035c53d902302247fa6aaf6161b86886
-vendor/lib/libI420colorconvert.so|4b5e18de981b075ffddd1cfb32280ec687ded6d7
-vendor/lib/libOmxAacDec.so|b4c60defd76f5710a2254458aeab6774246238b9
-vendor/lib/libOmxAlacDec.so|549ed2748ac9ed818a9461a03e7fe04be44abcc6
-vendor/lib/libOmxAmrDec.so|4c3e5171ee60f438d6444cba7ba6a1d02624ba67
-vendor/lib/libOmxAmrwbplusDec.so|310cea8a796aa25865dad4c264db42392fe9b23f
-vendor/lib/libOmxApeDec.so|149460e2f3e28b8a775052a9145a5ebfe3fa3d4b
-vendor/lib/libOmxDsdDec.so|8900c3bf3c4edf0e0941bc46c236a7def789d494
-vendor/lib/libOmxEvrcDec.so|f48cf03db16afb51937fa7008713fcf0fe0b1662
-vendor/lib/libOmxG711Dec.so|c03ad89da893cb07e0d0512257ee163d8b6ae69a
-vendor/lib/libOmxQcelp13Dec.so|1c041805e7d6739f3f36baaf05bcf7feba53a901
-vendor/lib/libOmxWmaDec.so|7769ea65228cc2d7a5bd6edc2c3c2d1bb6b68879
-vendor/lib/libmm-color-convertor.so|5dadc8c60f89ebf45e1ba54057a3ab4de1d6703a
-vendor/lib/vendor.qti.hardware.vpp@1.1.so|0807ca009303688cca274c67fc76d9506afdd6a2
-vendor/lib/vendor.qti.hardware.vpp@1.2.so|5fd5cffe3adda016689a8353d0f1cef8837472f2
-vendor/lib64/libI420colorconvert.so|37f042ed98717649f60b9f4020193531c4ab7ba3
-vendor/lib64/libOmxAacDec.so|2a9ad6e435b05fe7d880b772e6b906cf64d39984
-vendor/lib64/libOmxAlacDec.so|69ec0b79074f8b219e7131669b5d659e242561b1
-vendor/lib64/libOmxAmrDec.so|3c5f7f2d2ce57ba6e15900ef242d354cc4999e77
-vendor/lib64/libOmxAmrwbplusDec.so|9fb5ebe0544619c33fd2eaf0ad7e06fb717314d4
-vendor/lib64/libOmxApeDec.so|8ca7ddfb3f4833b4bcad9f94625553d7bf2d17a1
-vendor/lib64/libOmxEvrcDec.so|f8db4a0de1dc3c66f257fad373a0b3d5ca4fc5db
-vendor/lib64/libOmxG711Dec.so|0093b8fb1ed36c42d320f1573e8538435c404b10
-vendor/lib64/libOmxQcelp13Dec.so|0c2b1874c4009172e4ebba3e2cdb917ed20902ea
-vendor/lib64/libOmxWmaDec.so|940f782edf7cdb5a3505fcd8f953bc11ed69f020
-vendor/lib64/libmm-color-convertor.so|62f4b6359686e24ef003c6f17c74401021cf04b4
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so|bfd44d4c9682bda4d07cefa8612b163c19320452
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so|3d5b120720f188ed88d96d6b3d7d507e22345a75
+# Media - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/libdsd2pcm.so|7f17a4d46f2090665b8d0c6b2d7ade526d3dc266
+vendor/lib/libI420colorconvert.so|0c57e3ca47b175cb0530db2095c4f6e8c20fec55
+vendor/lib/libOmxAacDec.so|7da342254d04ebf1d38b9a19a67cc3b063f9d7b8
+vendor/lib/libOmxAlacDec.so|61709ae602dc78efb51a224eef159715d93eb694
+vendor/lib/libOmxAmrDec.so|fb64a1fc1e9a88dddb11d881b7d5ad57e48578b6
+vendor/lib/libOmxAmrwbplusDec.so|d94d32f0ff0a57c77ee3db1b591b69d1e565327a
+vendor/lib/libOmxApeDec.so|9ca846c49acfb1728600e0ccb1c8ed481217d3eb
+vendor/lib/libOmxDsdDec.so|0538854ab9308887d5fe34c5e0bd7d634d393b30
+vendor/lib/libOmxEvrcDec.so|c7f2409dd9c22ac4872fd88288f32b1a22e6c0f6
+vendor/lib/libOmxG711Dec.so|200e5266e2258c07e28f1e7d3858cc239e6e9e6b
+vendor/lib/libOmxQcelp13Dec.so|c3c66b571f2ef44197fc88f6800745c39e7db87b
+vendor/lib/libOmxWmaDec.so|90f78772f70f2d5a46712f95d1a53cfedffb9c63
+vendor/lib/libmm-color-convertor.so|851a07d27c73bb0ccbdcadfc67799feb5919008a
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|2bf8de06341b625390e6fa0c5d83cee94ac1692d
+vendor/lib/vendor.qti.hardware.vpp@1.2.so|5c43141629cf99c648d7a01f0412b5599e3c9158
+vendor/lib64/libI420colorconvert.so|71c6e9f585c8596e17e48ddd1c574cfc23b1f286
+vendor/lib64/libOmxAacDec.so|20a3dbe83fbc2f0e4e21f78fe14c7dac8d27f245
+vendor/lib64/libOmxAlacDec.so|047d75640ea1ffeb18e51c9c4216d5008d324118
+vendor/lib64/libOmxAmrDec.so|56fc14e4b30dcf86f980818894bca232c6dc50b1
+vendor/lib64/libOmxAmrwbplusDec.so|8377cd4298b8925be4c2bdf949777ef36b2c0566
+vendor/lib64/libOmxApeDec.so|99ecd798f6c525a24f58052ba323733fbcaf0324
+vendor/lib64/libOmxEvrcDec.so|f541c39d1b8dbc1dd1e43ced01f2761041efc6b5
+vendor/lib64/libOmxG711Dec.so|c4d2cb6da661336aae7b582b6713371912cdeb87
+vendor/lib64/libOmxQcelp13Dec.so|87981f2285e2e89819160e86f1d48b2f7ea67b3e
+vendor/lib64/libOmxWmaDec.so|df9e51469a58a06d7061cc5557e039a2451fdf41
+vendor/lib64/libmm-color-convertor.so|ac5678150b202a041ec55b5db63408a345cdb67e
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|e555e7ccd61ca8456121775d66324ce71666c8be
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so|00d45c3fec03e73946ade43933f452652d8d4f6b
 
 # Mlipay - from lavender QKQ1.190910.002 V12.5.7.0.QFGCNXM
 vendor/bin/mlipayd@1.1|a8cd2b8e51a1e8bd1325847b607f81e4f5600f2f
