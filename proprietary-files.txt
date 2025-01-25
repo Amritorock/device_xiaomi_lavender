@@ -388,13 +388,13 @@ system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so|183028009a4a77c85623a1cd5
 system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so|9e5c5ab7709c3fad6b20c22b39bb761088e363c7
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
 
-# DPM - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/bin/dpmQmiMgr|48a0b87b1ac46bee60b3a94250015fdac28fb894
+# DPM - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/dpmQmiMgr|13a5010588993c121614ec5bb1e76e2ae7931b79
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
-vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|fb6a9e5d7e72bb393ce4b5879435011d94ecc4fc
-vendor/lib/libdpmqmihal.so|ef78de3f78e85a3630cf14cb759b0091944c9342
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|4989f6eec66179deb402c74036463a5574137003
-vendor/lib64/libdpmqmihal.so|829607920727e143c8a9ef478b264e3e5113df8e
+vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|bcc4e1a938bebdc86b3399dc6efae9c845af0d67
+vendor/lib/libdpmqmihal.so|1dd28e528354ddfdcecd96263d36c80c251c9f83
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|cea24c38d54e75c3a03cdfc4b5f65a9c1f37813d
+vendor/lib64/libdpmqmihal.so|4e8ed4a61273d5023d4bab93077cf5d5e93508dc
 
 # Dirac - from jasmine QKQ1.190910.002 V11.0.23.0.QDIMIXM
 vendor/etc/diracmobile.config|88fa19095df9e256f0af510df266f749bf60e258
