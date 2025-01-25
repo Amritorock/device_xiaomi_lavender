@@ -644,21 +644,21 @@ vendor/lib64/hw/vulkan.adreno.so|2c371b131a2672c96d7ecf02bcbda954f9662879
 # IRQ balance - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/bin/msm_irqbalance|43c4f34f3c98556903f9cef3493c2e52fa3b792c
 
-# Keymaster - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|549af6e45e14fcca052c3b4a41daad56ad402733
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|ad5f83c00616392d33ead371500ec0fb142eea73
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|424aa78da72990552acd98fba35e3c62399d7b54
-vendor/lib/libkeymasterdeviceutils.so|5de829f722aac202b57cc90a25ed0e68dd100911
-vendor/lib/libkeymasterprovision.so|335e15a1fc40e06751daa201d9cded80faed6486
-vendor/lib/libkeymasterutils.so|487e6f9ddd7a82d6c31324c5c5409b2fcf222dce
-vendor/lib/libqcbor.so|943c873f958a74b0caeff6e40b342945ad4031da
-vendor/lib/libqtikeymaster4.so|b3d02e6f169de946025964295d704afc64b89717
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|f569ab512639601cbd1d5bc74b432ad8258bfb22
-vendor/lib64/libkeymasterdeviceutils.so|3c3e460fd305cb80c1b55619ecc764ce31de2374
-vendor/lib64/libkeymasterprovision.so|b24d82a37bc30875faf3149c0ecfd15a0528cd15
-vendor/lib64/libkeymasterutils.so|395f755efdfa2d4a945a89cee307996ab86222a6
-vendor/lib64/libqcbor.so|bb32684536eb00f0ae35f3bc900aeb8cc349ccef
-vendor/lib64/libqtikeymaster4.so|a49dd158783b79edaaeb7de7dfe4a1ff3f8ad118
+# Keymaster - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|7ac96fb43095a95cadf80d6df7c39f5f2d092268
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|7ccc25d45d1e410235e6874a6697294ef2f35d07
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|279f181c6d94529aa2ec6ca3d6d030c371ac6e3b
+vendor/lib/libkeymasterdeviceutils.so|b96bf4438cbb56f00ecb0317cdd91ec9f92f27b5
+vendor/lib/libkeymasterprovision.so|8f0c91753a6cde19674e8b9f77ac41acb6c50558
+vendor/lib/libkeymasterutils.so|9e77337a1986f6d027779328141f6e34916a5dfb
+vendor/lib/libqcbor.so|db529d6056188d346687ba999035fc60c909feb8
+vendor/lib/libqtikeymaster4.so|d70b561ae677f0cdf184ba21ff7f9968ba6b68e7
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|748bddc7f3c18c8faecf73d47f7435987d1db1b9
+vendor/lib64/libkeymasterdeviceutils.so|fddfafd32a82fd1af090ede578152a590e1da63d
+vendor/lib64/libkeymasterprovision.so|7f198792c33d40c05a8aa26d26ee22d7b395ef00
+vendor/lib64/libkeymasterutils.so|fbbf18ae5a033c2612188557eca7113ddd6c52bb
+vendor/lib64/libqcbor.so|4d0659390290e8ffe4ccb4cbebe3d8e17e64f34f
+vendor/lib64/libqtikeymaster4.so|61cba93f58c30ec5a70fd8e38001868ccfea9e99
 
 # Listen - from LA.QSSI.14.0.r1-10000.01-qssi.0
 system_ext/lib/liblistenjni.qti.so|00c2e22a02d96ace1a5c55447497c47c43d468e1
