@@ -462,12 +462,12 @@ vendor/lib64/libwvhidl.so|39a5766f1b64c9bddc2af63421edcc515fe030ea
 vendor/lib64/libops.so|79efbf6cad2617a6d1de6c649cca9ddeb1a0c1e5
 vendor/lib64/libspl.so|e2b3e2dd28b0eee567d72de696cd1e01288ae06f
 
-# DSP - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/bin/dspservice|4ff6bac615c12a3a732eccca4b1e25e280acf880
+# DSP - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/dspservice|68d41ca160453ef8aa3b2783d679a5e5adae4062
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
-vendor/lib/vendor.qti.hardware.dsp@1.0.so|f7890b87c8bb449b3cda16c584821fffb67d4a8c
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|b1979a024bfa5ee39e149d7924c44243187f1fbf
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|a5ebb76b2098437027f290f6550115561c015774
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|ccee7b245bf5f9510b81783693c8263922271c26
 
 # ESE - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|604943026eac709762db91f79e542d915895e621
