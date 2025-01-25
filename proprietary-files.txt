@@ -1111,11 +1111,11 @@ vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
 -vendor/lib/libthermalclient.so|c95984e29617243ae7ce7f7da01663e6b0c87e94
 -vendor/lib64/libthermalclient.so|4be5c7fd77a30758716a2ab65aae70fa60639177
 
-# Time services - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
--vendor/app/TimeService/TimeService.apk|8155de9d66f1f6d5b58a1af12f420d6889cea877
--vendor/lib/libtime_genoff.so|5482c1954b46755270a20208420d6fb527d223c4
--vendor/lib64/libtime_genoff.so|1665709ab77112c33fa84a6dd45913e1d3adb4ce
-vendor/bin/time_daemon|a313e2419cd77d99ff4a40a88defe77088a4bc8f
+# Time services - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+-vendor/app/TimeService/TimeService.apk|7a30697354bbaeefd9c79cd84d14e0e3e06006df
+-vendor/lib/libtime_genoff.so|e5e9b096c81cb0b96e064a8873d7c72d0ae17079
+-vendor/lib64/libtime_genoff.so|1c2de2c94be03bba76cfcf56637037e680d1785d
+vendor/bin/time_daemon|22bc64c60ba3c60ae91b1dbd68eed75eff6e12e3
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 
 # Wifi - from Honeywell/hon660/hon660:12/94.00.03/0037:user/release-keys
