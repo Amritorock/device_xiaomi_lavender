@@ -666,19 +666,19 @@ system_ext/lib/liblistensoundmodel2.qti.so|d1b0ebd11cbeac9b9ac44b56c070a1df4406c
 system_ext/lib64/liblistenjni.qti.so|f7a0504c2b52a34976f59507aa0c361e75ea9e77
 system_ext/lib64/liblistensoundmodel2.qti.so|c13687f58b5f42d928765aaf844ed95cf38b9b1f
 
-# Listen - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/lib/libadpcmdec.so|e93004a25f718447c0c9ea13f57ab98abdb04077
-vendor/lib/libgcs-calwrapper.so|774922d73d1ca2c520168b45dcca69ea0fdef40f
-vendor/lib/libgcs-ipc.so|ede31a7e061e9d2d182da006088aebd3ec6c5101
-vendor/lib/libgcs-osal.so|7d019b8c28f49bc7ae571bb033483b425d70485e
-vendor/lib/libgcs.so|7cad77da6218d3ebc10d02ae16887e9828be098a
-vendor/lib/libmulawdec.so|940e646054ba3ea5ebf068e6ef83d3bedbab9ea4
-vendor/lib/libsmwrapper.so|eee5f95c2606a564c91cd70083e5e66328c0fb6c
-vendor/lib64/libgcs-calwrapper.so|851adb2ace8d1c8b16ecae08fbcacb3bd2d87bd3
-vendor/lib64/libgcs-ipc.so|85269967df043ff3aaaa62347b161362d9df39a3
-vendor/lib64/libgcs-osal.so|158586fa96dc726ae661767ecaa08b28d8ea1bf8
-vendor/lib64/libgcs.so|678c7956f4aaae15ff044192850e1d879e98fb90
-vendor/lib64/libmulawdec.so|0fffe1bfb77a6cdf6fada5833369a6445d67a7d0
+# Listen - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/libadpcmdec.so|4b81681ed187ee7e6dbffa5cab1117d3b4fd12e6
+vendor/lib/libgcs-calwrapper.so|987d336b2b25461ec8b9b187185b634e3a4ec0e5
+vendor/lib/libgcs-ipc.so|2927d93f8a084b262c854a5fb3c463437537f7f3
+vendor/lib/libgcs-osal.so|6c802e66a173e4744b0022adc67eebada70f9ad0
+vendor/lib/libgcs.so|22112dcc1fe625986f728ca2970b3f92187423c6
+vendor/lib/libmulawdec.so|e4c09fd7fe6a1a3f5ccc9d17789e97f34fae6282
+vendor/lib/libsmwrapper.so|645528dd36c6ace92ee2452e86a9a474d3d49ea4
+vendor/lib64/libgcs-calwrapper.so|03f093a5f1919ee28b73fbf1a377b46f012a8818
+vendor/lib64/libgcs-ipc.so|c7a7f07d77580108a0668930c1ad5672afb191cb
+vendor/lib64/libgcs-osal.so|165528e49929a1549b6b1d25f352bd804ae65ef0
+vendor/lib64/libgcs.so|da63fb393414a8d1eec06a7c9b9facab2f13c322
+vendor/lib64/libmulawdec.so|09a7c865d2097fa7b35d009bf66b9f0519e7c57e
 
 # Media - from LA.QSSI.14.0.r1-16600-qssi.0
 system_ext/lib/extractors/libmmparserextractor.so|eafa1a6161456a9283cd2b2b92a44fe2ce6937e3
