@@ -92,17 +92,17 @@ system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e
 # Audio FX modules - from google/cheetah/cheetah:15/AP3A.241005.015
 vendor/lib/soundfx/libspatialaudio.so|1b574e25db97b76b712ddffda6da42c3c5c5df6e
 
-# Audio FX modules - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/lib/soundfx/libasphere.so|215c6398599cd6ff31dcda5bd8031df503de3248
-vendor/lib/soundfx/libqcbassboost.so|910fac188b53dd5be69a7c73ae114361b50b3c6f
-vendor/lib/soundfx/libqcreverb.so|5adfcca6dfcb0b50f561eef7d5f9a1e8f34e6b1b
-vendor/lib/soundfx/libqcvirt.so|f584e9c28c5728ccc10f3c0c7b431c1c3a3d15da
-vendor/lib/soundfx/libshoebox.so|4bf94da7f5e345ef245370d537de555b5424b750
-vendor/lib64/soundfx/libasphere.so|29a91dca7ce04c8a452021ec987ea55acc2d7d9e
-vendor/lib64/soundfx/libqcbassboost.so|2f084a1db802898ce69c2cee5912f5850265b738
-vendor/lib64/soundfx/libqcreverb.so|18665e98837f68d2b0d4cfae196a2f3b924131cc
-vendor/lib64/soundfx/libqcvirt.so|a3ce0590ecf999038a26a87825fc9d29e82719bf
-vendor/lib64/soundfx/libshoebox.so|00ecc900130c764e60a33b2aa13e403858cf0897
+# Audio FX modules - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/soundfx/libasphere.so|376a8e4740eda57dc825995fbd495f5d8442e691
+vendor/lib/soundfx/libqcbassboost.so|9099a034fc3983ea559222dd9d4b92078cfe3da1
+vendor/lib/soundfx/libqcreverb.so|786619cba9ac4ff890b69baa9caca588a1536c17
+vendor/lib/soundfx/libqcvirt.so|42639299fab70b8209afce318cad4b6878baceef
+vendor/lib/soundfx/libshoebox.so|f3f1f82604a8a854c3526b1d4844a883349c0cd0
+vendor/lib64/soundfx/libasphere.so|e63f92f5d1d43a82c06a1ef13941e1ff73d2df0f
+vendor/lib64/soundfx/libqcbassboost.so|e4c4d6537597fa53c1435d3debe239b9f5d7465c
+vendor/lib64/soundfx/libqcreverb.so|9a0760965c1d1955877befb999733ac4ef07aa2f
+vendor/lib64/soundfx/libqcvirt.so|9733f7123114d1dc3790d63ee70d6228d7f54d66
+vendor/lib64/soundfx/libshoebox.so|c88c36d90d3a54dea8e3ef08114598942810ac28
 
 # Audio FX modules - from lavender QKQ1.190910.002 V12.5.7.0.QFGCNXM
 vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
