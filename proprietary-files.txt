@@ -621,21 +621,21 @@ vendor/lib64/vendor.display.color@1.1.so|65409342ecea5cfa2103a4ab0b6380ef691e288
 vendor/lib64/vendor.display.color@1.2.so|ada5c4d7907fe649dda8507c8c6fe63c50ae1e10
 vendor/lib64/vendor.display.postproc@1.0.so|408b4edd234e9da45ab55d64950af8b58ca5e6bf
 
-# Graphics (SDM) - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-lib/libsdm-disp-apis.so|eba35c0353f6bd08959b36ddf9a7d213c49c795d
-lib64/libsdm-disp-apis.so|d762f4e901a7330f37ef72bd6d4f677bc65e601a
-vendor/lib/libqseed3.so|594968e708352f1acad45d0b5a51b01d99d7df01
-vendor/lib/libsdm-color.so|0b7f6dec24301d64983e34e634c0d09b4174fd88
-vendor/lib/libsdm-diag.so|f3a64959eff169e4a1b82ee2592ff3a45f2e29f8
--vendor/lib/libsdm-disp-vndapis.so|41c68e9d09bc00e172008ffdc0f0e4df880d7b13
-vendor/lib/libsdmextension.so|5d5c146ff0c6f4fb388c9878c01b298539ee09e6
-vendor/lib/libtinyxml2_1.so|850841dcda03fc62bbc8c0eb67bcceb05232cca8
-vendor/lib64/libqseed3.so|43119af1a229c256bb1d9af6338b77cbcd5baae7
-vendor/lib64/libsdm-color.so|d0c5d3287256c034437eeb007be068cf67742805
-vendor/lib64/libsdm-diag.so|cfcd838d9ca203e70a5e284b36a274e6b479f485
--vendor/lib64/libsdm-disp-vndapis.so|a5a1ebf08f7c1f4104cbf8ac69d5f42523fdb0fa
-vendor/lib64/libsdmextension.so|9baf67fa56d5c7bb296bf6c4942c253522638dd2
-vendor/lib64/libtinyxml2_1.so|6d602dfd9df770ee6ecdbe0e9d98b8951dd8483d
+# Graphics (SDM) - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+lib/libsdm-disp-apis.so|369c71b84355d1775cec271b19283721dbfbac63
+lib64/libsdm-disp-apis.so|2de535884bb057c6c1bc3fae8a59e79516d908df
+vendor/lib/libqseed3.so|87b37fefb7609474f9d1730c6c6a23c681046fe3
+vendor/lib/libsdm-color.so|408b3a458834a30ed316f50d8bb662b29f16f73e
+vendor/lib/libsdm-diag.so|a83a801ba72e7f94533ba8340f8ebe51f6d4b941
+-vendor/lib/libsdm-disp-vndapis.so|16ea053728a1bf0fc6c285c8cf193dcaa9cc6ffc
+vendor/lib/libsdmextension.so|b97d77474f5991d3d038b9633c6ccfda67f3e1ec
+vendor/lib/libtinyxml2_1.so|dfe3efe3a6e5ad5beb6e4e9adb02eef475b421a7
+vendor/lib64/libqseed3.so|0a81db5fc5b762a8fd246dfccd69014662fe35eb
+vendor/lib64/libsdm-color.so|8c997688894a6373787e1eabbb62f719bbb632b4
+vendor/lib64/libsdm-diag.so|1b27bcbdba062afc1d414b30c1efcd08ac4140cf
+-vendor/lib64/libsdm-disp-vndapis.so|c8408b9e8d9ee4cf82eb0c0000fb348848ff3c55
+vendor/lib64/libsdmextension.so|9a4342e9417fd7cee2eb4d34c55762c4de6811ae
+vendor/lib64/libtinyxml2_1.so|5bdb5c7785f90ad4ebaa7085a4f83d86567331f9
 
 # Graphics (Vulkan) - from Zebra/helios/helios:13/13-34-31.00-TG-U00-STD-HEL-04/181:user/release-keys
 vendor/lib/hw/vulkan.adreno.so|c9243672f1543fddb5313803a841b527055cd4a5
