@@ -163,17 +163,17 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|a24eb9dbb746
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|d73d79009877d54a7f9014d3e0fdc41339b07ef1
 
-# CDSP - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/bin/cdsprpcd|4328f165661becf854f4160798604c80646d3b12
+# CDSP - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/cdsprpcd|258702b84c4496e7021c1d24d20794f6d2fedc11
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsp_default_listener.so|a12223866800e96d70c6aadfaf97f875bbb44741
--vendor/lib/libcdsprpc.so|f695b1309fe3a1394198f63b516bd63e4afea38c
-vendor/lib/libfastrpc_utf_stub.so|cf7abf9e1424590a9ce37d44a9351ad45ef489c6
-vendor/lib/libsysmon_cdsp_skel.so|1ae0c1df309e4aa6782f74a260372efd8709c824
-vendor/lib64/libcdsp_default_listener.so|5e372b9be619e792f9ab5d200f33c02fda73a771
--vendor/lib64/libcdsprpc.so|618b76b55d5f642b6a4f8ef72ca5f73227dbfeeb
-vendor/lib64/libfastrpc_utf_stub.so|5101b6dd3a69b330c7b5ea5aa2f9349ad58edb7d
-vendor/lib64/libsysmon_cdsp_skel.so|b5584502cd9adadc35af392ae74b688810848cd7
+vendor/lib/libcdsp_default_listener.so|a6d2f3139eb94edb58eb8c97af85f8236bdedbfb
+-vendor/lib/libcdsprpc.so|72c4150d4358b335d2b88ccb5ca34e23d08ee238
+vendor/lib/libfastrpc_utf_stub.so|ad1b79fc1ce0534d4d9c491ba67532d76ef4d508
+vendor/lib/libsysmon_cdsp_skel.so|636f834df2e62cbd6fd6c2bf3040a3272ca72714
+vendor/lib64/libcdsp_default_listener.so|fdd9893e7e95a98ec953ac32d3a2a5918b28ef82
+-vendor/lib64/libcdsprpc.so|4688f68c303a4def9c01549621f223283fc8ca12
+vendor/lib64/libfastrpc_utf_stub.so|5455994d24e197a444ced928f45a8fdb5a8f711e
+vendor/lib64/libsysmon_cdsp_skel.so|d84cc18b220ece72091fc366903a2d24bfdd2bba
 
 # Charger - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
 vendor/bin/hvdcp_opti|672bdd8302a94249a9d220e793201d4448ff3df7
