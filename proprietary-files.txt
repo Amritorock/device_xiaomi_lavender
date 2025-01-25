@@ -773,15 +773,15 @@ vendor/lib64/libqmi_legacy.so|0b4dba90da668f5cbf61f8723e4e75a10034ceb3
 vendor/lib64/libqmiservices.so|da93b1eb56aed21ce22535a076bf0e6e57bdf35e
 vendor/lib64/libsubsystem_control.so|64cebaa5d9530a902f244a8cb984e686a94d1ced
 
-# QSEEcom HAL - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-system_ext/lib/vendor.qti.hardware.qseecom@1.0.so|b7eeccfa11ca3765396182be6b3386d343c6dd60
-system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so|f586b193b9fba71845f27b4395505180b411c176
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|95f9e0aa4b3320a22a534bf415f0473fd09b3cbc
+# QSEEcom HAL - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+system_ext/lib/vendor.qti.hardware.qseecom@1.0.so|4124a30185be4b6eefc7e4bdced0866b4001586d
+system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so|52c0d411f28048b4eb32bcda07d22d791135c4d4
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|a923b55ee6799bf299e8bf74707fceca6cb8184d
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|8565233122afc8c99f536677452a7dd66713cdca
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so|1ae7ccce14972437e28c276c5f140386b1f0a966
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|a0950b63719a54dce170f69c512db3ff5a93b06b
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|f0846863eaee7fcefd0d8bfa24c8f78a34122388
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|25e30994e2ce84d92dffde6e451714b432c84c38
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so|0dca64ec55d8ad4611c102b207a5d621eeffaefd
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|5dac5a44ec69223c4efc7716280d58a3cba45298
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|b41cc6ade0e907297bc7f4b70cc6b95276a584c8
 
 # Radio - from LA.QSSI.14.0.r1-16800-qssi.0
 system_ext/app/DeviceInfo/DeviceInfo.apk|9151091e029c31228100a4c471b5a499acdf8129
