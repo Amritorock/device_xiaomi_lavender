@@ -1,22 +1,22 @@
-# ADSP - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/bin/adsprpcd|644b1a746405607f13e0f85858ebb639dec7ea6c
-vendor/bin/loadalgo|abcf4624e25cf091f7316333e86ef532838f7a80
+# ADSP - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/bin/adsprpcd|cff4409a0fd8788650c0aace2762abb041357e2a
+vendor/bin/loadalgo|1b921bf28fa22c6ad19c478d7df0159bc20e795c
 vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
-vendor/lib/libadsp_default_listener.so|f2191b143abf8835cd1409788c831cc0f9d81da8
-vendor/lib/libadsp_hvx_callback_skel.so|2017c8a2236725ce8a8897d565f50925a2bcca4f
-vendor/lib/libadsp_hvx_stub.so|528518a4f8f03a2f3c8f5d1d459310524539de23
-vendor/lib/libadsprpc.so|1082498554559387c78f03164ea563c74a926b6b
-vendor/lib/libfastcvadsp_stub.so|2690e88baea557d9f6d6ceeab005411a92f17ccc
-vendor/lib/libfastcvopt.so|88827dcb3eb7927af3cbd04c4928ba525ae42eae
-vendor/lib/libmdsprpc.so|4477f3dced78ecf04500f5c9132afacceddabd0c
-vendor/lib/libsdsprpc.so|6663bc831e8e8e236380c59c1852962a80f8921e
-vendor/lib64/libadsp_default_listener.so|64e293b05a3180b0b0f5a64c43269adac7cd4117
-vendor/lib64/libadsprpc.so|9ec4e3601f7bfe8c8f247ef5baa63fdf41fe303f
-vendor/lib64/libfastcvadsp_stub.so|18cbe6d77b48ee6c0c2565cfae4d2ba9d9792039
-vendor/lib64/libfastcvopt.so|8d4de2616d098757adb80ec31c2e301083844194
-vendor/lib64/libloadalgo_stub.so|4f485f1e3c7142addd4c9eda3368b109e187c55c
-vendor/lib64/libmdsprpc.so|0fe4e2aabfc5e83d89c67f272ca32183d7c102ee
-vendor/lib64/libsdsprpc.so|3b0f886df3717e756ce38840413d0a0068ae4662
+vendor/lib/libadsp_default_listener.so|e3cfdff42fdb64882beba917367c9f3e423dff02
+vendor/lib/libadsp_hvx_callback_skel.so|fd7f944d8235aaa617aa2906ed39406a623c012a
+vendor/lib/libadsp_hvx_stub.so|212b0b8a693b85c54b8062c09599d08428ad73ae
+vendor/lib/libadsprpc.so|ccb72c88c7e20d7aebebd9917f95e0bb1eef4b26
+vendor/lib/libfastcvadsp_stub.so|a662dc04efa8d3add8b7f0f7182c7c2bd389abeb
+vendor/lib/libfastcvopt.so|a427855a25216b6e55d6647ccc2c442f378e549d
+vendor/lib/libmdsprpc.so|5a38a2d023f3cccd30b37d9533125c98832b9571
+vendor/lib/libsdsprpc.so|492cee7cdb1a3e5d9cee4147759b198c9409da53
+vendor/lib64/libadsp_default_listener.so|93e1f400865f48514d5353e7b6dcaaf6b3cad2fc
+vendor/lib64/libadsprpc.so|b0503930aac6102e0242f0dc07ae089817f92352
+vendor/lib64/libfastcvadsp_stub.so|cfcd3078ad1078f838d6b6e1aee89e44f4a5b41b
+vendor/lib64/libfastcvopt.so|a5f62c4d69493a9efc2a9d61c89d1d53c83061a5
+vendor/lib64/libloadalgo_stub.so|1d7008f428734d7c25b95d5fa29470e6775c17e3
+vendor/lib64/libmdsprpc.so|7c63c27e5549e02b1c5434fa114ab829bdee38e3
+vendor/lib64/libsdsprpc.so|bbdf1ef1f78e1d4394953dc2b4e5c3e1f969094a
 
 # ADSP modules - from Honeywell/hon660/hon660:12/94.00.03/0037:user/release-keys
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
