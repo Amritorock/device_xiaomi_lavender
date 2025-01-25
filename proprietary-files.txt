@@ -595,9 +595,9 @@ vendor/lib64/libllvm-qcom.so|b55e4fbe013caee2357f77397be052db5d9e4484
 vendor/lib64/librs_adreno.so|3f8bccf5b5907cebc0d4edb2e804dc3f57fdf8eb
 vendor/lib64/libVkLayer_q3dtools.so|46d0b3b271d3f9c18f56f309cafb7630ce418f3a
 
-# Graphics (HDR) - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/lib/libhdr_tm.so|dd0e01284e1e76244a849e5a2e0393a21bd36508
-vendor/lib64/libhdr_tm.so|28117de78d64d15d1454a13b50c17b168170e456
+# Graphics (HDR) - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/libhdr_tm.so|9e9a3b4f22d443fb67dabe58e6e9ba0c4423621e
+vendor/lib64/libhdr_tm.so|d8b25ba8b8f8a157b2a6f9ba6fb0d89a96dd4030
 
 # Graphics (Postprocessing) - from LA.QSSI.14.0.r1-14100-qssi.0
 system_ext/lib64/libsd_sdk_display.qti.so|2300df780204b5bf55dcf249a2e593bc27ffd255
