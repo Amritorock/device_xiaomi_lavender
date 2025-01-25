@@ -1065,23 +1065,23 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|f2e30c6693a33f3cd3d836dd1195a501e23
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|98cf76bc21d928d0d11a87aab8f9d5d84d8e6926
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|bdda09f0e35d160a6e9482d8d20c562fd2fcce24
 
-# SCVE - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/lib/libscveCommon.so|53c964ff873bf962a28cea07d20ff72cac84e266
-vendor/lib/libscveCommon_stub.so|8d4d5b4a1f4e2fa7d845f6cb2e1c27c9db5d1dd0
-vendor/lib/libscveObjectSegmentation.so|876fcf365fffe69deb82725499e25e2cd25b9b48
-vendor/lib/libscveObjectSegmentation_stub.so|a1ec153331a8e1ec3e07a766cd45ec41838dffa1
-vendor/lib/libscveObjectTracker.so|f62d9c2206bda6b35222a76c35e5be289e6d07fb
-vendor/lib/libscveObjectTracker_stub.so|54fe67907bdc527443bcf89cdb7df55c3b328846
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|1a32110619778b9a93cbf8226e6206e9f39828eb
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|4c4b5290ddbd9ad458cbe8d1778d57e4def24247
-vendor/lib64/libscveCommon.so|e0cf61bbe8bfd2bc8d46056f6414cc269411204e
-vendor/lib64/libscveCommon_stub.so|9e80b79b9d91edf360371cf4d2898a4bd9627182
-vendor/lib64/libscveObjectSegmentation.so|fbabc31cbbf7824ec5aa08cdd73ad4c37613fe9c
-vendor/lib64/libscveObjectSegmentation_stub.so|ee0924db08cbc029cdfcd15f4a7814892071f6da
-vendor/lib64/libscveObjectTracker.so|1114f864dc94a02272e6575ce24a8574459caec3
-vendor/lib64/libscveObjectTracker_stub.so|c8d4ee447045e0bcd4bc9fe101ff3ad5089250da
-vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|20dca87cf73b1e69b1650aff7c5c72f9e0b74fe0
-vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|aab964d5e947d461c190aa3841d136dfa0fd9b44
+# SCVE - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/libscveCommon.so|db4e2be83546fdd7849d3ef991ca6c5dd8b0a7ed
+vendor/lib/libscveCommon_stub.so|af8ce186268513feb5d10c1c644994be9dfe6ab2
+vendor/lib/libscveObjectSegmentation.so|23d7e2a473572f93e98969108f2efd8d1f6ace43
+vendor/lib/libscveObjectSegmentation_stub.so|e3d2a434e27565583c0bbe1415076468107e5daa
+vendor/lib/libscveObjectTracker.so|a70ddcf65d93eb1c17d462f25fb759d9de5ffb21
+vendor/lib/libscveObjectTracker_stub.so|91e58d0192b5ee9733b189b0928cec83c4f7051d
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|b618257b14cfee63d90c4232a8b037bb17880fb4
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|57921824b9a2e990ccc3c14fd8ac379719a150f2
+vendor/lib64/libscveCommon.so|49c61b6c04fd4899c5496883723d01c18fe44947
+vendor/lib64/libscveCommon_stub.so|4ad6b32f6a50425b9949da01b2ac0449a111c6d4
+vendor/lib64/libscveObjectSegmentation.so|f4aea134e81d959ee6282f5a57d1b91e41c27f4d
+vendor/lib64/libscveObjectSegmentation_stub.so|9db00e49830a6651cf47bc0e2e3d642b4d5c8bd3
+vendor/lib64/libscveObjectTracker.so|8131fc78817868df35450f1ef4f87fdcbeccddb8
+vendor/lib64/libscveObjectTracker_stub.so|1aab10549a893f1dd7c6b4534aee3c956daf679c
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|bb3563c0f8d18718d8619dfde17002e102c9828b
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|105680edfe7d9112e643d2a1943bef6666a7a25e
 
 # Sensors - from Zebra/helios/helios:13/13-34-31.00-TG-U00-STD-HEL-04/181:user/release-keys
 -system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|662159c62a683a2096a73adf1d52b1074c1ab960
