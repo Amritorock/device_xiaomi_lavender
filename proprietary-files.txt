@@ -479,10 +479,10 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|5a31000f2523d9e0b3da4182e
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|8055d79b9bf871ac33f2bfd5358db00584fde6e1
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|5a046f91fbbf60818e63be216946225ced0ac288
 
-# FM - from Zebra/helios/helios:13/13-32-14.00-TG-U02-STD-HEL-04/163:user/release-keys
-vendor/lib/vendor.qti.hardware.fm@1.0.so|7f95c3a15c29e8ff499462e0aaac2d776057377f
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|5452688754349f98837bcf645c02c2689a55c2e8
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|9fcd16c2b517e0940d36a17e63c16ba98b50bc1a
+# FM - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/lib/vendor.qti.hardware.fm@1.0.so|f47f4cc205ac303e745c0acb6c6a1b1cd467e99d
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|d4025a178a559d3a72f29d57d2404561cdccf48a
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|12c1ca37da7c6628f7b09cb3865818f72b8fef68
 
 # Gatekeeper QTI - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|73bb4f63cd79ad30341c0e27c951ec771973401a
