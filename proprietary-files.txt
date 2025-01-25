@@ -295,10 +295,10 @@ system_ext/lib64/vendor.qti.latency@2.0.so|10719ecbfef5113d2b63219508ea84b32b565
 system_ext/lib64/vendor.qti.latency@2.1.so|8afb1a5e48f8c060a9ed4be9a95df4e321d07d05
 system_ext/lib64/vendor.qti.latency@2.2.so|65b005b52a036db91be3a05abc12f9339ccc082b
 
-# CNE - from Zebra/helios/helios:13/13-22-18.00-TG-U02-STD-HEL-04/84:user/release-keys
-vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|06d2d028b5d8af16bcb65c279e841c61398b39a5
-vendor/app/IWlanService/IWlanService.apk|ec4af209c1fb7e90c4645d420c1331c7811018ed
-vendor/bin/cnd|6eff77732536d9f482228d929f8e872966634e66
+# CNE - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|0704c1bf2b3cc685bdefc937e815a2d480c151c5
+vendor/app/IWlanService/IWlanService.apk|995595633ab2b18dd3b819b513b1ce860f9f35d1
+vendor/bin/cnd|44eb39f4baa0d26b56c21bd881542d4db088f70a
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml|f88e13f1dd7b82388c90358f71813026370c9ed8
@@ -330,34 +330,34 @@ vendor/etc/cne/mwqem.conf|c42ad47b34b511075e5dfb9047d32f881fe0c159
 vendor/etc/cne/profileMwqem.xml|947917691684584b7e2ddf3588cd6f8e99f3804f
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|c63c37d067e3009735fbc54d4603d43d7d6623e1
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
-vendor/lib64/libcne.so|a862fa3b59cb7e62fe9cc3979bb13d2ac213f276
-vendor/lib64/libcneapiclient.so|8749864a7ebdb184d3e37a8ac856c6d5e39884aa
-vendor/lib64/libcneoplookup.so|cfd574cf0a2a537f3113c8fc03e6e2d2218b6069
-vendor/lib64/libcneqmiutils.so|e08be10c0d5df7d772fe909b7a58c86f1b287cc0
-vendor/lib64/libwms.so|bce5857d2b685a8ad539f5afd5e070c9536885ef
-vendor/lib64/libwqe.so|1830657ac64c72484509e4b179f46da5cf9d81c3
-vendor/lib64/libxml.so|6fc0fdba0c1882c49d942cc0bd4893a96bc2ebd6
-vendor/lib64/vendor.qti.data.factory@2.0.so|3604e8d51d30706632d4a35d37280534853aa3da
-vendor/lib64/vendor.qti.data.factory@2.1.so|bf2683b142f20eed967bd372c7aa51ec7c19104e
-vendor/lib64/vendor.qti.data.factory@2.2.so|6512084313a710fd93000afea008994e36ef7e1c
-vendor/lib64/vendor.qti.data.factory@2.3.so|f503e41f590ca1592a2a7b8856a59ac5606f2f10
-vendor/lib64/vendor.qti.data.mwqem@1.0.so|6f940565d6b50ae6e9ff6a511bd3a57407ff541c
-vendor/lib64/vendor.qti.data.slm@1.0.so|d1faf118223c75e2eb52bd1982617b4de23d60e3
-vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so|a162d0a1857c88cb8b4fe59336ba90c90cdae41f
-vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so|4bdebf8ace1fe910b4d8719232ee70a133fa6d55
-vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|5b758f8e150dfc47ef96260b072b6f433a13372f
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|1b59e6df7993c6d41d774787b9a5d7c3dd11942c
-vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|aa1a6f164c790dfddb21756c4b601a974ffdba16
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|d4066363e098c9ca8b9ecd4aadca37a3a02c79f3
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so|36becc6e80f1619d543ef5335a06130c8a213377
-vendor/lib64/vendor.qti.hardware.data.flow@1.0.so|57cd9d6a0b0ff139eadcc4e2628636641a949779
-vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|ef660dc83320392de444176c480a6c071abf1f8f
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|103b4a6e6b717db3b5f7c364c502846b8b3d099e
-vendor/lib64/vendor.qti.hardware.data.lce@1.0.so|f4933fb19653c0aea0ef9bfa506d28ce056281bf
-vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|2fe4e2bfbd4e48ece254faf431c9350f612616a9
-vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|d938d5c0ca2d76d3128145f083da6cfddcd66244
-vendor/lib64/vendor.qti.latency@2.0.so|e216c626432f0af91eabf976449b5d142b4cbde5
-vendor/lib64/vendor.qti.latency@2.1.so|fbfacecc64eecfdca8e46dbff1fa9e7d5bbd17fe
+vendor/lib64/libcne.so|01542392f828196bddb114008dcb6c6129108844
+vendor/lib64/libcneapiclient.so|f236e47a0bff1628d6ba386ae96bd6bb98d06612
+vendor/lib64/libcneoplookup.so|6d6d4c011055b928db1af56e810cacc392124d17
+vendor/lib64/libcneqmiutils.so|f38d86aecbef4b5d54bfdd9824fc9b2e82067510
+vendor/lib64/libwms.so|d6f8c42c15ecdf237b7007bca0bb3bc116518d5c
+vendor/lib64/libwqe.so|f4c4147a706c87ba834ded08e96503f67665a993
+vendor/lib64/libxml.so|3a44eaa4d74f196b14375ce0f9d485e79b03aee9
+vendor/lib64/vendor.qti.data.factory@2.0.so|165f24084eef7aea42137f8071619a0d2bc14aa9
+vendor/lib64/vendor.qti.data.factory@2.1.so|701985f2a1d8f5415389fa7a957e9a26b4122720
+vendor/lib64/vendor.qti.data.factory@2.2.so|5133368d96f1543bad1df702fad361f6b203fb11
+vendor/lib64/vendor.qti.data.factory@2.3.so|4293648693885624841df399c9af64e3cd633ee4
+vendor/lib64/vendor.qti.data.mwqem@1.0.so|eb1f5ef44be68f04e28638a5855f80e9ff8a9a86
+vendor/lib64/vendor.qti.data.slm@1.0.so|48007174ba3dbbea268c25404ed12a9f7fecdc6b
+vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so|c9a6c15a710c18e017b1588521e8d9bfe03299c8
+vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so|d1fc68429654511444875068511b9283ceb26aed
+vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|0ec2287b329424fc61f5c493f46ec1b0cbab5eb2
+vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|0d1a3952ba366ebd6008a865d78dbc4a59209bc0
+vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|43a90945a02ac94c1fd07862b7b86b3bdcdae4ed
+vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|9ff2c9c3bbf648141881f5259244b6e7ae369dc7
+vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so|42d3dccde36b558b8fb7bbef6c0c7e3baa79be38
+vendor/lib64/vendor.qti.hardware.data.flow@1.0.so|29f3fa6724af6ae862a3c44710cd2e59e249811c
+vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|ca610f1b2a6b2cdecef1afce44e3ccc63fcc5a00
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|17ef49c7d93b14dd95393093582c581349776a5f
+vendor/lib64/vendor.qti.hardware.data.lce@1.0.so|274205350c9b47b6209e73930c1b1eb9e85f6d47
+vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|9766fa580dff9e70b1fd076ecdb88e195f97da1d
+vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|250dd0e2ff7489aa58d315055f542205e58c4628
+vendor/lib64/vendor.qti.latency@2.0.so|adb1c9e473a274828c1c25d1634674be722b2999
+vendor/lib64/vendor.qti.latency@2.1.so|89c180755e0b99a5c726f80cdfa083dbed2387f2
 
 # ConsumerIR (lirc) - from jason V12.0.1.0.PCHCNXM
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.lirc.sdm660.so|8c614f98e2a42b5ba9e148c01b3d69e7fb59ce1d
