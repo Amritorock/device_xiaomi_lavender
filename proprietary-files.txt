@@ -18,7 +18,7 @@ vendor/lib64/libloadalgo_stub.so|1d7008f428734d7c25b95d5fa29470e6775c17e3
 vendor/lib64/libmdsprpc.so|7c63c27e5549e02b1c5434fa114ab829bdee38e3
 vendor/lib64/libsdsprpc.so|bbdf1ef1f78e1d4394953dc2b4e5c3e1f969094a
 
-# ADSP modules - from Honeywell/hon660/hon660:12/94.00.03/0037:user/release-keys
+# ADSP modules - Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
