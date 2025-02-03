@@ -675,11 +675,11 @@ vendor/lib64/libgcs-osal.so|165528e49929a1549b6b1d25f352bd804ae65ef0
 vendor/lib64/libgcs.so|da63fb393414a8d1eec06a7c9b9facab2f13c322
 vendor/lib64/libmulawdec.so|09a7c865d2097fa7b35d009bf66b9f0519e7c57e
 
-# Media - from LA.QSSI.15.0.r1-10500-qssi.0
+# Media - from LA.QSSI.15.0.r1-13300-qssi.0
 system_ext/lib/extractors/libmmparserextractor.so|2053835e8eaaea8c9302ba892598135b6789e15f
-system_ext/lib/libavenhancements.so|d467c3fd9f5f0c1334b72932c11e029502abe8a4
+system_ext/lib/libavenhancements.so|1f2155fdd1ab065b58b13ac4b0111b8d7932a8a0
 system_ext/lib64/extractors/libmmparserextractor.so|fd22a2bc8f956911b05e938ed7fa7f7cd008baac
-system_ext/lib64/libavenhancements.so|f39e19fd63e579c2926c7dfa9241a3a81e052db9
+system_ext/lib64/libavenhancements.so|8abd5f469db832c5691be02b9eb222108753a9af
 
 # Media - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/lib/libdsd2pcm.so|7f17a4d46f2090665b8d0c6b2d7ade526d3dc266
