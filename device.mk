@@ -13,6 +13,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
