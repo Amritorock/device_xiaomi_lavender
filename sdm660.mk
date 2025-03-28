@@ -190,6 +190,7 @@ PRODUCT_PACKAGES += \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     libdisplayconfig \
+    libdrmutils \
     libgralloc.qti \
     vendor.display.config@1.0 \
     vendor.display.config@1.0.vendor \
