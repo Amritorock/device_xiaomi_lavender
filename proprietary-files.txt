@@ -39,8 +39,8 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 vendor/lib/rfsa/adsp/dirac_resource.dar|1e5c52f2a41bdbec4f38ebdcb83d4fc73edc0ec9
 vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 
-# Audio - from LA.QSSI.15.0.r1-10500-qssi.0
-system_ext/bin/qxrsplitauxservice|890ae25d11d9caf03342440c93681b2e08db3f39
+# Audio - from LA.QSSI.15.0.r1-14500-qssi.0
+system_ext/bin/qxrsplitauxservice|238f353993ddbd57bbca5cdd239e0451b6e516e5
 system_ext/etc/init/sxrauxd_ext.rc|fbaa12e37788fa17524fec02b842902d4e3a6f53
 system_ext/etc/seccomp_policy/sxraux-arm.policy|0508c0d7bf078a26f4c37c4eac58b44b4b21de3f
 system_ext/lib/libbinauralrenderer_wrapper.qti.so|03495a4640b506e0511e4d9df007fc6901ac4c99
@@ -54,11 +54,11 @@ system_ext/lib64/libbinauralrenderer_wrapper.qti.so|2172fcf906b4c3155450d3c3a37d
 system_ext/lib64/libhoaeffects.qti.so|fda85e1b425059f6be8f7a8541b702230a9e5c65
 system_ext/lib64/libhoaeffects_csim.so|3eca122613a3af345493a242b6839466dd472ac0
 system_ext/lib64/liblsmclient.so|6cd379c9112609a3bc4eef98a1ceff8ce40be22e
-system_ext/lib64/libqxrsplitauxservice.qti.so|f2163dab3cf71329f0675bb800fbb343abaa8310
+system_ext/lib64/libqxrsplitauxservice.qti.so|16ba9790bcd4cdb7d59f7e448793143259a990d5
 system_ext/lib64/libvr_amb_engine.so|acb1fd360626b9f237adef0551d5ea31af58f347
 system_ext/lib64/libvr_object_engine.so|8e53cccb6e2c56032d5388f4151d29123d63f51c
 system_ext/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so|27b3c4622216f2cd37604ffa79c9c90a7d7cb788
-system_ext/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so|baaa2cd20be6c86aff7734e9cbd13dbd10ba6177
+system_ext/lib64/vendor.qti.hardware.qxr-V1-ndk.so|2ba20e8821894c2ed887e14301dc0402dcc57a3c
 
 # Audio - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/bin/audioflacapp|ac0fd76083430736851da040b5547677ac7f4067
