@@ -222,8 +222,16 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
 
 # Fstab
+ifneq ($(filter lavender,$(TARGET_DEVICE)),)
+PRODUCT_PACKAGES += \
+    fstab_A.qcom
+else ifeq ($(ENABLE_AB), true)
+PRODUCT_PACKAGES += \
+    fstab_AB.qcom
+else
 PRODUCT_PACKAGES += \
     fstab.qcom
+endif
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
