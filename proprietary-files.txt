@@ -898,7 +898,7 @@ vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190995eda651e5c45e11c9b111a478
 vendor/radio/qcril_database/qcril.db|537c2d6b80b5be76e257923495c82988851c6eb1
 
-# Radio - IMS - from LA.QSSI.15.0.r1-13300-qssi.0
+# Radio - IMS - from LA.QSSI.15.0.r1-15400-qssi.0
 system/lib64/vendor.qti.diaghal-V1-ndk.so|ac3381b74861e15a8fb2842dd8d929c97a5f0fa1
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
@@ -950,11 +950,11 @@ system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so|27c382a7bc71096fa57489f741d2
 system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so|fa865a4f628ba3df7f3d48c226d5362d936f5842
 system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so|2727839b062b6555344a76ebc4b1f736df331336
 system_ext/lib64/lib-imsvideocodec.so|2db5b8c344b6de05dba4f9a1449fd74e17d78819
-system_ext/lib64/lib-imsvt.so|32fd182fe087a297395f1d6e1d90587a9b97d7c1
+system_ext/lib64/lib-imsvt.so|fdcc027ce8c8b8f21cd659c10a4c3f00ddf3611e
 system_ext/lib64/lib-imsvtextutils.so|acce4410add2b5088adab8f7b4e37e36e0c09105
 system_ext/lib64/lib-imsvtutils.so|8a1e06e3edf157b3cba2e608daf70ff0afa823d4
-system_ext/lib64/libdiag_system.qti.so|cd8d03d4cc4db64493df5d28efc2a4f9b7689293
-system_ext/lib64/libdiag_system.so|e00fa91ebc18ddaa55b3de979a43e1f0648a13b6
+system_ext/lib64/libdiag_system.qti.so|3e0a18a3c01c8d8403ff814a6dab02883f9df0e7
+system_ext/lib64/libdiag_system.so|4cd102f8f592eda2c64625a87e4e4043c2b67ce3
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|0b61c9104edbcf3284daae09b253b2acbed65ad6
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|7616e2b6a8cb3dd2c7c594eed1b16417a1257125
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so|5dcf34600f5cc23d7a6d8f5072a46eacf72e0907
@@ -998,7 +998,7 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|961321653e924726bd01af6bfbb33c6
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|33008343e8ac15821278faecc1c234e8bea3fe2d
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|c27f4e77d677a3e8d1c1c91ca1b40958dfb7f9d6
 system_ext/lib64/vendor.qti.mstatservice@1.0.so|924edc51a015d99dec5b4fdc9bbf754a2a41a136
-system_ext/priv-app/ims/ims.apk|a7f6f9f5634efa143fe0daa5065d74b91f3e780c
+system_ext/priv-app/ims/ims.apk|6d3fa88eb5637eba8ff7c9ddc4a41a0b46eb2e03
 
 # Radio - IMS - from Zebra/helios/helios:14/14-23-05.00-UG-U05-STD-HEL-04/5:user/release-keys
 vendor/bin/ims_rtp_daemon|ec805e6eb6540b793b85b4ed529e111826310ef7
