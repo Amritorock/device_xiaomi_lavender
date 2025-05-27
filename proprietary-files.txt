@@ -770,8 +770,8 @@ vendor/lib/vendor.qti.hardware.qseecom@1.0.so;MODULE_SUFFIX=_vendor|0dca64ec55d8
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|5dac5a44ec69223c4efc7716280d58a3cba45298
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so;MODULE_SUFFIX=_vendor|b41cc6ade0e907297bc7f4b70cc6b95276a584c8
 
-# Radio - from LA.QSSI.15.0.r1-14500-qssi.0
-system_ext/app/DeviceInfo/DeviceInfo.apk|58e0b5831244827e05afedbb468fb69942a5e4c1
+# Radio - from LA.QSSI.15.0.r1-15400-qssi.0
+system_ext/app/DeviceInfo/DeviceInfo.apk|88adaa91050beb5ecc91140ffac922457614a73f
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|d5829c38c2370cb9acd8b3753d62cef709815614
 system_ext/app/uceShimService/uceShimService.apk|8ebd2b6361a6bdae9dcc58d049aaad73a6482743
 system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml|68313c1332f3650f7fc23d796c8dd1ee79bfa5e5
