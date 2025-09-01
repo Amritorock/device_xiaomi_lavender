@@ -904,9 +904,6 @@
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
 
-    <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">true</bool>
-
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
             1 - Global actions menu
