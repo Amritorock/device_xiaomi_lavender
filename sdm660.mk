@@ -290,6 +290,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     init.xiaomi_parts.rc \
+    init.uclamp.rc \
     init.verity.rc \
     ueventd.qcom.rc
 
