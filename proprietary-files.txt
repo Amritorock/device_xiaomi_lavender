@@ -209,6 +209,10 @@ vendor/lib/libvidhance.so|6faef62ca49114de6f4882b05c956e9f4c04031f
 vendor/lib/libvidhance_gyro.so|b105a3902a4a5344d85d9c9e65d28b2e945887db
 vendor/lib/mibokeh_660_opencl.bin|a47d3661427db459be2f1ea163d3783e1137843a
 
+# Camera - from clover
+vendor/lib/libts_detected_face_hal.so|2425d0e2e6427a858f063f406f0aa328a5a2e56a|2425d0e2e6427a858f063f406f0aa328a5a2e56a
+vendor/lib/libts_face_beautify_hal.so|928ea9764f91580f540b3895c159bad88106e3e5|928ea9764f91580f540b3895c159bad88106e3e5
+
 # Camera-actuators - from lavender V10.3.6.0.PFGMIXM
 vendor/lib/libactuator_lavender_imx486_ofilm_i_bu64982.so|b9c25753bc55ded0a0ee013a0b76384d6f1cf44f
 vendor/lib/libactuator_lavender_imx486_ofilm_i_dw9714.so|c644b70ca76b3c6c9ddeaff9c56ead78f229ed46
