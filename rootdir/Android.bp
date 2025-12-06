@@ -1,41 +1,12 @@
 //
 // Copyright (C) 2019-2024 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
-//
 
-soong_config_module_type {
-    name: "xiaomi_sdm660_rootdir_prebuilt_etc",
-    module_type: "prebuilt_etc",
-    config_namespace: "XIAOMI_SDM660",
-    variables: ["PARTITION_SCHEME"],
-    properties: ["src"],
-}
-
-soong_config_string_variable {
-    name: "PARTITION_SCHEME",
-    values: ["a", "ab", "lavender"],
-}
-
-xiaomi_sdm660_rootdir_prebuilt_etc {
+// fstab
+prebuilt_etc {
     name: "fstab.qcom",
-    soong_config_variables: {
-        PARTITION_SCHEME: {
-            a: {
-                src: "etc/fstab.qcom",
-            },
-            ab: {
-                src: "etc/fstab_AB.qcom",
-            },
-            lavender: {
-                src: "etc/fstab_A.qcom",
-            },
-            conditions_default: {
-                src: "etc/fstab.qcom",
-            },
-        },
-    },
+    src: "etc/fstab.qcom",
     vendor: true,
-    ramdisk_available: true,
 }
 
 prebuilt_etc {
@@ -84,6 +55,13 @@ prebuilt_etc {
     name: "init.uclamp.rc",
     src: "etc/init.uclamp.rc",
     sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.lavender.rc",
+    src: "etc/init.lavender.rc",
+    sub_dir: "init/hw",
     vendor: true,
 }
 

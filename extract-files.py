@@ -18,11 +18,12 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/sdm660-common',
+    'device/xiaomi/lavender',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sdm660',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
+    'vendor/xiaomi/lavender',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um',
@@ -122,11 +123,20 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libqxrsplitauxservice.qti.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V3-cpp.so', 'android.media.audio.common.types-V4-cpp.so')
         .add_needed('libaudioclient_shim.so')
-        .add_needed('libwfdservice_shim.so')
+        .add_needed('libwfdservice_shim.so'),
+    ('vendor/lib/libts_face_beautify_hal.so', 'vendor/lib/libts_detected_face_hal.so', 'vendor/lib/lib_lowlight.so'): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    ('vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so', 'vendor/lib64/hw/fingerprint.fpc.default.so', 'vendor.qti.hardware.fingerprint@1.0.so'): blob_fixup()
+        .remove_needed('libhidltransport.so')
+        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sdm660-common',
+    'lavender',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
