@@ -53,13 +53,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.uclamp.rc",
-    src: "etc/init.uclamp.rc",
-    sub_dir: "init",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.lavender.rc",
     src: "etc/init.lavender.rc",
     sub_dir: "init/hw",
