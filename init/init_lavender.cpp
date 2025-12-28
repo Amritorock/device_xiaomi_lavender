@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
-   Copyright (c) 2019-2020, The LineageOS Project
+   Copyright (c) 2019-2025, The LineageOS Project
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -26,198 +26,121 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <string.h>
 #include <sys/sysinfo.h>
-#include <unistd.h>
-#include <cstdlib>
-#include <fstream>
-
-#include <android-base/file.h>
-#include <android-base/properties.h>
-#include <android-base/strings.h>
-#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <cstring>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cctype>
 
-#include "property_service.h"
+#include <android-base/properties.h>
+
 #include "vendor_init.h"
 
 using android::base::GetProperty;
-using android::base::ReadFileToString;
 
-char const* heapstartsize;
-char const* heapgrowthlimit;
-char const* heapsize;
-char const* heapminfree;
-char const* heapmaxfree;
-char const* heaptargetutilization;
-
-// Utils
-void property_override(char const prop[], char const value[], bool add = true) {
-    auto pi = (prop_info*)__system_property_find(prop);
-
-    if (pi != nullptr) {
+void property_override(const char* prop, const char* value) {
+    prop_info* pi = (prop_info*)__system_property_find(prop);
+    if (pi)
         __system_property_update(pi, value, strlen(value));
-    } else if (add) {
+    else
         __system_property_add(prop, strlen(prop), value, strlen(value));
-    }
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-                            char const value[]) {
-     property_override(system_prop, value);
-     property_override(vendor_prop, value);
+static std::string to_upper(std::string str) {
+    std::transform(str.begin(), str.end(), str.begin(),
+                   [](unsigned char c) { return std::toupper(c); });
+    return str;
 }
 
-void property_override_triple(char const product_prop[], char const system_prop[],
-                              char const vendor_prop[], char const value[]) {
-    property_override(product_prop, value);
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
-}
-
-void check_device() {
+static void load_dalvikvm_props() {
     struct sysinfo sys;
-
     sysinfo(&sys);
 
-    if (sys.totalram > 5072ull * 1024 * 1024) {
-        // from - phone-xhdpi-6144-dalvik-heap.mk
-        heapstartsize = "16m";
-        heapgrowthlimit = "256m";
-        heapsize = "512m";
-        heaptargetutilization = "0.5";
-        heapminfree = "8m";
-        heapmaxfree = "32m";
-    } else if (sys.totalram > 3072ull * 1024 * 1024) {
-        // from - phone-xxhdpi-4096-dalvik-heap.mk
-        heapstartsize = "8m";
-        heapgrowthlimit = "192m";
-        heapsize = "512m";
-        heaptargetutilization = "0.6";
-        heapminfree = "8m";
-        heapmaxfree = "16m";
+    if (sys.totalram > 3072ull * 1024 * 1024) {
+        property_override("dalvik.vm.heapstartsize", "8m");
+        property_override("dalvik.vm.heapgrowthlimit", "192m");
+        property_override("dalvik.vm.heaptargetutilization", "0.6");
+        property_override("dalvik.vm.heapminfree", "8m");
+        property_override("dalvik.vm.heapmaxfree", "16m");
     } else {
-        // from - phone-xhdpi-2048-dalvik-heap.mk
-        heapstartsize = "8m";
-        heapgrowthlimit = "192m";
-        heapsize = "512m";
-        heaptargetutilization = "0.75";
-        heapminfree = "2m";
-        heapmaxfree = "8m";
+        property_override("dalvik.vm.heapstartsize", "8m");
+        property_override("dalvik.vm.heapgrowthlimit", "192m");
+        property_override("dalvik.vm.heaptargetutilization", "0.75");
+        property_override("dalvik.vm.heapminfree", "2m");
+        property_override("dalvik.vm.heapmaxfree", "8m");
     }
+
+    property_override("dalvik.vm.heapsize", "512m");
 }
 
-void vendor_load_persist_properties() {
-    std::string product = GetProperty("ro.product.vendor.device", "");
-    if (product.find("clover") != std::string::npos) {
-        std::string hw_device;
-        char const* hw_id_file = "/sys/devices/virtual/graphics/fb0/msm_fb_panel_info";
+struct lavender_props {
+    std::string build_description;
+    std::string build_fingerprint;
+    std::string model;
+    std::string device;
+};
 
-        property_override("ro.setupwizard.rotation_locked", "false");
-        property_override_triple("ro.product.name", "ro.product.system.name",
-                                 "ro.product.vendor.name", "clover");
-        ReadFileToString(hw_id_file, &hw_device);
-        if (hw_device.find("NT51021_BOE_BOE10") != std::string::npos) {
-            property_override("persist.sys.fp.vendor", "fpc");
-            property_override("ro.board.variant", "d9p");
-            property_override("vendor.display.lcd_density", "265");
-            property_override_triple("ro.product.model", "ro.product.system.model",
-                                     "ro.product.vendor.model", "MI PAD 4 PLUS");
+static const std::vector<std::string> ro_props_default_source_order = {
+    "",
+    "odm.",
+    "product.",
+    "system.",
+    "vendor.",
+    "system_ext.",
+};
 
-            property_override(
-                    "persist.vendor.audio.calfile0",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Bluetooth_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile1",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_General_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile2",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Global_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile3",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Handset_cal.acdb");
-            property_override("persist.vendor.audio.calfile4",
-                              "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Hdmi_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile5",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Headset_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile6",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_Speaker_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile7",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-d9p/QRD_D9P_workspaceFile.qwsp");
-            property_override("persist.vendor.audio.calfile8",
-                              "/vendor/etc/acdbdata/adsp_avs_config.acdb");
+static void set_variant_props(const lavender_props& prop) {
+    property_override("ro.build.description", prop.build_description.c_str());
+    property_override("ro.build.product", prop.device.c_str());
 
-        } else {
-            property_override("persist.sys.fp.vendor", "none");
-            property_override("ro.board.variant", "d9");
-            property_override("vendor.display.lcd_density", "320");
-            property_override_triple("ro.product.model", "ro.product.system.model",
-                                     "ro.product.vendor.model", "MI PAD 4");
+    for (const auto& source : ro_props_default_source_order) {
+        std::string fp = "ro." + source + "build.fingerprint";
+        std::string dev = "ro.product." + source + "device";
+        std::string mdl = "ro.product." + source + "model";
 
-            property_override(
-                    "persist.vendor.audio.calfile0",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Bluetooth_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile1",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_General_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile2",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Global_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile3",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Handset_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile4",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Hdmi_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile5",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Headset_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile6",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_Speaker_cal.acdb");
-            property_override(
-                    "persist.vendor.audio.calfile7",
-                    "/vendor/etc/acdbdata/QRD/sdm660-snd-card-skush/QRD_SKUSH_workspaceFile.qwsp");
-            property_override("persist.vendor.audio.calfile8",
-                              "/vendor/etc/acdbdata/adsp_avs_config.acdb");
-        }
+        property_override(fp.c_str(), prop.build_fingerprint.c_str());
+        property_override(dev.c_str(), prop.device.c_str());
+        property_override(mdl.c_str(), prop.model.c_str());
     }
 }
 
 void vendor_load_properties() {
-    check_device();
+    load_dalvikvm_props();
 
-    property_override("dalvik.vm.heapstartsize", heapstartsize);
-    property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    property_override("dalvik.vm.heapsize", heapsize);
-    property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
-    property_override("dalvik.vm.heapminfree", heapminfree);
-    property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+    std::string hwc = to_upper(GetProperty("ro.boot.hwc", ""));
 
-    std::string product = GetProperty("ro.product.vendor.device", "");	
-    if (product.find("whyred") != std::string::npos)
-    {
-        std::string region = GetProperty("ro.boot.hwc", "");
+    const std::string build_desc =
+        "lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys";
 
-        property_override_triple("ro.product.name", "ro.product.system.name", "ro.product.vendor.name", "whyred");
+    const lavender_props global_48 = {
+        build_desc,
+        "xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGMIXM/release-keys",
+        "Redmi Note 7 (48MP)",
+        "lavender"
+    };
 
-        if (region.find("CN") != std::string::npos || region.find("Global") != std::string::npos || region.find("GLOBAL") != std::string::npos)
-        {
-            property_override_triple("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "Redmi Note 5");
-            property_override_dual("ro.product.odm.model", "persist.vendor.camera.exif.model", "Redmi Note 5");
-        }
-	else
-        {
-            property_override_triple("ro.product.model", "ro.product.system.model", "ro.product.vendor.model", "Redmi Note 5 Pro");
-            property_override_dual("ro.product.odm.model", "persist.vendor.camera.exif.model", "Redmi Note 5 Pro");
-        }
+    const lavender_props india_12 = {
+        build_desc,
+        "xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGINXM/release-keys",
+        "Redmi Note 7",
+        "lavender"
+    };
 
-        // Set hardware revision
-        property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+    const lavender_props india_48 = {
+        build_desc,
+        "xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGINXM/release-keys",
+        "Redmi Note 7S",
+        "lavender"
+    };
+
+    if (hwc == "INDIA_48_5") {
+        set_variant_props(india_48);
+    } else if (hwc == "INDIA") {
+        set_variant_props(india_12);
+    } else {
+        set_variant_props(global_48);
     }
-
-    vendor_load_persist_properties();
 }
+

@@ -21,8 +21,3 @@ PRODUCT_NAME := lineage_lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Build Description
-PRODUCT_BUILD_PROP_OVERRIDES += \
-        BuildDesc="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys" \
-        BuildFingerprint=xiaomi/lavender/lavender:10/QKQ1.190910.002/V11.0.1.0.QFGMIXM/release-keys
