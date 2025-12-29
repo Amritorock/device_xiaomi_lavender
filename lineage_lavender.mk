@@ -21,3 +21,8 @@ PRODUCT_NAME := lineage_lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# AxionAOSP stuff
+AXION_MAINTAINER := Amrito_Karmokar
+AXION_PROCESSOR := Snapdragon_660™
+TARGET_ENABLE_BLUR := true
