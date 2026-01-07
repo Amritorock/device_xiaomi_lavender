@@ -58,7 +58,7 @@ TARGET_ENFORCES_QSSI := true
 TARGET_TS_MAKEUP := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 MALLOC_SVELTE_FOR_LIBC32 := true
-$(call project-set-path,qcom-camera,$(DEVICE_PATH)/camera)
+$(call project-set-path,qcom-camera,hardware/qcom-caf/sdm660/camera)
 
 # ConfigFS
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
