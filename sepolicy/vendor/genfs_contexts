@@ -77,3 +77,6 @@ genfscon sysfs /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.q
 genfscon sysfs /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/brightness         u:object_r:sysfs_torch:s0
 genfscon sysfs /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness     u:object_r:sysfs_torch:s0
 genfscon sysfs /devices/platform/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:switch_0/brightness        u:object_r:sysfs_torch:s0
+
+# SchedBoost
+genfscon proc /sys/kernel/sched_boost u:object_r:proc_sched_boost:s0
