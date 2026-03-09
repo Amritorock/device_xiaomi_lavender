@@ -35,3 +35,6 @@ type per_boot_file, file_type, data_file_type, core_data_file_type;
 
 # Torch Control
 type sysfs_torch, fs_type, sysfs_type;
+
+# Sched Boost
+type proc_sched_boost, fs_type, proc_type;
