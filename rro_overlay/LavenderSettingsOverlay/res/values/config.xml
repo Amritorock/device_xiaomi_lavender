@@ -11,23 +11,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Whether sim related information is visible to the end user. -->
-    <bool name="config_show_sim_info">false</bool>
-
-    <!-- Whether or not emergency info tile should display in device info page -->
-    <bool name="config_show_emergency_info_in_device_info">false</bool>
-
-    <!-- Whether to show emergency settings in top-level Settings -->
-    <bool name="config_show_emergency_settings">false</bool>
-
-    <!-- Whether to show emergency gesture in Settings -->
-    <bool name="config_show_emergency_gesture_settings">false</bool>
-
-    <!-- Max network scan search time in seconds -->
-    <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
-
-    <!-- Device specific doze package -->
-    <string name="config_customDozePackage" translatable="false">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+    
+    <!-- Enable doze mode -->
+    <bool name="doze_display_state_supported">true</bool>
 
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
