@@ -31,5 +31,4 @@ GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
 GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
 PERF_DEFAULT_GOV := schedutil
 PERF_GOV_SUPPORTED := true
-TARGET_ENABLE_BLUR := true
 TORCH_STR_SUPPORTED := true
