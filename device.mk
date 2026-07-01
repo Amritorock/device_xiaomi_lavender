@@ -204,6 +204,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # Media
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
