@@ -146,9 +146,6 @@ sys.paper_mode_max_level=32
 sys.tianma_nt36672_offset=12
 sys.tianma_nt36672_length=46
 
-# FS-verity
-ro.apk_verity.mode=2
-
 # Fastbootd
 ro.fastbootd.available=true
 
