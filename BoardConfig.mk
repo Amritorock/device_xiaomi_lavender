@@ -70,6 +70,9 @@ TARGET_SCREEN_DENSITY := 420
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
+# Fastbootd - it is enabled by default now
+TARGET_DISABLE_FASTBOOTD := true
+
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 
