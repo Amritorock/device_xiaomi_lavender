@@ -71,6 +71,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service_32.lineage \
     camera.sdm660
 
+# Control groups and task profiles
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
 
@@ -381,11 +386,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
-
-# Task Profiles
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/profiles/task_profiles_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
-    $(LOCAL_PATH)/configs/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
