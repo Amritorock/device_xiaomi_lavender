@@ -111,7 +111,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_CONFIG += vendor/xiaomi/sdm660_defconfig vendor/xiaomi/lavender.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
-TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_NO_GCC := true
 BOARD_RAMDISK_USE_LZ4 := true
 
