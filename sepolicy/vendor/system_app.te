@@ -30,3 +30,7 @@ get_prop(system_app, system_prop);
 set_prop(system_app, system_prop);
 get_prop(system_app, qemu_hw_prop);
 hal_client_domain(system_app, hal_mlipay);
+
+# kgsl
+allow system_app sysfs_kgsl:dir search;
+allow system_app sysfs_kgsl:file rw_file_perms;
