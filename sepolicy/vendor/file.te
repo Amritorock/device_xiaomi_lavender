@@ -41,3 +41,7 @@ type sysfs_torch, fs_type, sysfs_type;
 
 # Sched Boost
 type proc_sched_boost, fs_type, proc_type;
+
+# battery supply
+type vendor_sysfs_battery_supply, fs_type, sysfs_type;
+
