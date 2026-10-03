@@ -25,6 +25,10 @@ def FullOTA_InstallBegin(info):
         'ifelse(is_mounted("/vendor"), unmount("/vendor"));'
     )
     info.script.AppendExtra(
+        'assert(getprop("ro.boot.super_partition") == "system" || '
+        'abort("ERROR: This recovery does not support retrofit dynamic partitions."));'
+    )
+    info.script.AppendExtra(
         'run_program("/system/bin/toybox", "blkdiscard", '
         '"/dev/block/bootdevice/by-name/system") == 0 || '
         'abort("ERROR: Failed to discard data on system partition.");'
