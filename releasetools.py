@@ -17,6 +17,31 @@
 import common
 
 
+def FullOTA_InstallBegin(info):
+    info.script.AppendExtra(
+        'ifelse(is_mounted("/system_root"), unmount("/system_root"));'
+    )
+    info.script.AppendExtra(
+        'ifelse(is_mounted("/vendor"), unmount("/vendor"));'
+    )
+    info.script.AppendExtra(
+        'run_program("/system/bin/toybox", "blkdiscard", '
+        '"/dev/block/bootdevice/by-name/system") == 0 || '
+        'abort("ERROR: Failed to discard data on system partition.");'
+    )
+    info.script.AppendExtra(
+        'run_program("/system/bin/toybox", "blkdiscard", '
+        '"/dev/block/bootdevice/by-name/vendor") == 0 || '
+        'abort("ERROR: Failed to discard data on vendor partition.");'
+    )
+    info.script.AppendExtra(
+        'ui_print("- Flashing super_empty onto system partition...");'
+    )
+    AddImage(info, 'RADIO', 'super_dummy.img',
+             '/dev/block/bootdevice/by-name/system')
+    return
+
+
 def FullOTA_InstallEnd(info):
     OTA_InstallEnd(info)
     return
@@ -27,8 +52,8 @@ def IncrementalOTA_InstallEnd(info):
     return
 
 
-def AddImage(info, basename, dest):
-    path = 'IMAGES/' + basename
+def AddImage(info, dir, basename, dest):
+    path = dir + '/' + basename
     if path not in info.input_zip.namelist():
         return
 
@@ -43,5 +68,6 @@ def AddImage(info, basename, dest):
 
 
 def OTA_InstallEnd(info):
-    AddImage(info, 'vbmeta.img', '/dev/block/bootdevice/by-name/vbmeta')
+    AddImage(info, 'IMAGES', 'vbmeta.img',
+             '/dev/block/bootdevice/by-name/vbmeta')
     return
